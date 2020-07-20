@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <script src="FormValidation.js"></script>
+</head>
+
+<body>
+    <form onsubmit="return validate_Form();">
+        <table>
+            <tr>
+                <td>
+                    <label for="uname">Enetr Username: </label>
+                </td>
+                <td>
+                    <input type="text" name="uname" id="uname" onchange="validate_Uname();" required>
+                </td>
+                <td>   <span id="unamemsg"></span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="email">Enter Email</label>
+                </td>
+                <td>
+                    <input type="text" name="email" id="email" onchange="validate_Email();" required>
+                </td>
+                <td>
+                    <span id="emailmsg"></span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="pass">Enter Password</label>
+                </td>
+                <td>
+                    <input type="password" name="pass" id="pass" onchange="validate_Pass();" required>
+                </td>
+                <td>
+                    <span id="passmsg"></span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="con_pass">Confirm Password</label>
+                </td>
+                <td>
+                    <input type="password" name="con_pass" id="con_pass" onchange="validate_ConPass();" required>
+                </td>
+                <td>
+                    <span id="con_passmsg"></span>
+                </td></tr>            <tr>
+                <td colspan="2" align="center"><input type="submit" value="submit" value="submit"></td>
+            </tr>
+        </table>
+</form>
+</body>
+</html>
